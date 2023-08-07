@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshavardhan - Developer portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(15, 13, 13);
+            color: white;
+            font-family: Open Sans;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(169, 95, 238);
+        }
+
+        nav div {
+            color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(235, 224, 248);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .copy-link {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            left: 287px;
+            top: -9px;
+        }
+
+        .copy-link-input {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input:hover {
+            background: #454545;
+        }
+
+        .copy-link-button {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button:hover {
+            background: #eeeeee;
+        }
+
+        .copy-link2 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            left: 278px;
+            top: -13px;
+        }
+
+        .copy-link-input2 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input2:hover {
+            background: #454545;
+        }
+
+        .copy-link-button2 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button2:hover {
+            background: #cccccc;
+        }
+
+        .copy-link3 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            left: 275px;
+            top: -10px;
+        }
+
+        .copy-link-input3 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input3:hover {
+            background: #454545;
+        }
+
+        .copy-link-button3 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button3:hover {
+            background: #cccccc;
+        }
+
+        .copy-link4 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .copy-link-input4 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input4:hover {
+            background: #454545;
+        }
+
+        .copy-link-button4 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button4:hover {
+            background: #cccccc;
+        }
+
+        .copy-link5 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: -16px;
+            left: 312px;
+        }
+
+        .copy-link-input5 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input5:hover {
+            background: #454545;
+        }
+
+        .copy-link-button5 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button5:hover {
+            background: #cccccc;
+        }
+
+        .copy-link6 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: 13px;
+            left: -24px;
+        }
+
+        .copy-link-input6 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input6:hover {
+            background: #454545;
+        }
+
+        .copy-link-button6 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button6:hover {
+            background: #cccccc;
+        }
+
+        .copy-link7 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: -15px;
+            left: 274px;
+        }
+
+        .copy-link-input7 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input7:hover {
+            background: #454545;
+        }
+
+        .copy-link-button7 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button7:hover {
+            background: #cccccc;
+        }
+
+        .copy-link8 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: 17px;
+            left: -26px;
+        }
+
+        .copy-link-input8 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input8:hover {
+            background: #454545;
+        }
+
+        .copy-link-button8 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button8:hover {
+            background: #cccccc;
+        }
+
+        .copy-link9 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: -10px;
+            left: 274px;
+        }
+
+        .copy-link-input9 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input9:hover {
+            background: #454545;
+        }
+
+        .copy-link-button9 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button9:hover {
+            background: #cccccc;
+        }
+
+        .copy-link10 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            left: -25px;
+            position: relative;
+            top: 20px;
+        }
+
+        .copy-link-input10 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input10:hover {
+            background: #454545;
+        }
+
+        .copy-link-button10 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button10:hover {
+            background: #cccccc;
+        }
+
+        .copy-link11 {
+            --height: 28px;
+            display: flex;
+            max-width: 250px;
+            position: relative;
+            top: -8px;
+            left: 274px;
+        }
+
+        .copy-link-input11 {
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            width: 130px;
+            background-color: #545454;
+            color: white;
+        }
+
+        .copy-link-input11:hover {
+            background: #454545;
+        }
+
+        .copy-link-button11 {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .copy-link-button11:hover {
+            background: #cccccc;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: end;
+        }
+
+        .AWS {
+            position: relative;
+            left: 185px;
+            top: 60px;
+
+        }
+
+        .AWS-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+            position: relative;
+            top: -50px;
+            left: 18px;
+        }
+
+        .API-LU {
+            position: relative;
+            left: 470px;
+            top: 60px;
+        }
+
+        .API-LU-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+        }
+
+        .API-LU-gray {
+            position: relative;
+            top: 12px;
+            left: -28px;
+            color: #dfdada;
+        }
+
+        .secondSection {
+            display: flex;
+            align-items: end;
+            position: relative;
+            top: 110px;
+        }
+
+        .API-PM {
+            position: relative;
+            left: 185px;
+            top: auto;
+        }
+
+        .API-PM-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+            position: relative;
+            top: -20px;
+        }
+
+        .API-PM-gray {
+            color: #dfdada;
+            position: relative;
+            top: -6px;
+        }
+
+        .JS {
+            position: relative;
+            left: 470px;
+            top: auto;
+        }
+
+        .JS-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+        }
+
+        .JS-gray {
+            color: #dfdada;
+            position: relative;
+            top: 7px;
+            left: -24px;
+        }
+
+        .thirdSection {
+            display: flex;
+            align-items: end;
+            position: relative;
+            top: 160px;
+        }
+
+        .PY {
+            position: relative;
+            left: 185px;
+            top: auto;
+        }
+
+        .PY-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+            position: relative;
+            top: -20px;
+        }
+
+        .PY-gray {
+            color: #dfdada;
+            position: relative;
+            position: relative;
+            top: -3px;
+        }
+
+        .DSA {
+            position: relative;
+            left: 367px;
+            top: auto;
+        }
+
+        .DSA-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+        }
+
+        .DSA-gray {
+            color: #dfdada;
+            position: relative;
+            top: 10px;
+            left: -23px;
+        }
+
+        .DSA-IDPASS {
+            position: relative;
+            top: 33px;
+            right: 66px;
+        }
+
+        main hr {
+            position: relative;
+            top: 239px;
+            background-color: rgb(169, 95, 238);
+            border: 0;
+            height: 1px;
+            margin: 40px 53px;
+        }
+
+        .Code-Chef-title {
+            font-size: 2rem;
+            position: relative;
+            top: 275px;
+            left: 609px;
+            color: rgb(169, 95, 238);
+        }
+
+        .fourthSection {
+            display: flex;
+            align-items: end;
+            position: relative;
+            top: 347px;
+        }
+
+        .LJ {
+            position: relative;
+            left: 185px;
+            top: auto;
+        }
+
+        .LJ-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+        }
+
+        .LJ-gray {
+            color: #dfdada;
+            position: relative;
+            top: 10px;
+        }
+
+        .IDPASS {
+            position: relative;
+            top: 31px;
+            left: -29px;
+        }
+
+
+        .CC-DSA {
+            position: relative;
+            left: 307px;
+            top: auto;
+        }
+
+        .fifthSection {
+            display: flex;
+            align-items: end;
+            position: relative;
+            top: 393px;
+        }
+
+        .JP1 {
+            position: relative;
+            left: 185px;
+            top: auto;
+        }
+
+        .JP1-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+            position: relative;
+            top: 15px;
+        }
+
+        .JP1-gray {
+            position: relative;
+            top: 25px
+        }
+
+        .JP1-IDPASS {
+            position: relative;
+            top: 38px;
+            left: -65px;
+        }
+
+        .JP2 {
+            position: relative;
+            left: 307px;
+            top: auto;
+        }
+
+        .JP2-title {
+            font-size: 1.5rem;
+            color: rgb(201, 162, 238);
+            position: relative;
+            top: 15px
+        }
+
+        .JP2-gray {
+            position: relative;
+            top: 25px
+        }
+
+        .JP2-IDPASS {
+            position: relative;
+            top: 38px;
+            left: -65px;
+        }
+
+        @media screen and (max-width: 300px) {
+                body{
+                    background-color: red;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harshavardhan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <main>
+            <div class="firstSection">
+                <div class="AWS">
+                    <div class="AWS-title">
+                        <h4> AWS </h4>
+                    </div>
+                    <div class="AWS-image"><a href="AWS proof.jpg" target="_blank"><img src="AWS.jpg"
+                                alt="aws certificate" width="400"></a></div>
+                </div>
+                <br>
+                <div class="API-LU">
+                    <div class="API-LU-title">
+                        <h4> API essentials from Let's upgrade </h4>
+                    </div>
+                    <div class="API-LU-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+                    <div class="copy-link">
+                        <input type="text" class="copy-link-input" value="LUEPAFSJUL12378" readonly>
+                        <button type="button" class="copy-link-button">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="API-LU-image"><a href="https://verify.letsupgrade.in" target="_blank"><img
+                                src="API lets upgrade.jpg" alt="Let's Upgrade certificate" width="400"></a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="secondSection">
+                <div class="API-PM">
+                    <div class="API-PM-title">
+                        <h4> API from Postman </h4>
+                    </div>
+                    <div class="API-PM-gray">
+                        <pre>scan the qr or press on the certificate to verify</pre>
+                    </div>
+
+                    <div class="API-PM-image"><a href="https://badgr.com/public/assertions/aE-ZA2itSTKTEuBWN7_9ag"
+                            target="_blank"><img src="API postman.JPG" alt="postman certificate"
+                                width="400"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="JS">
+                    <div class="JS-title">
+                        <h4> Java Script </h4>
+                    </div>
+                    <div class="JS-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+
+                    <div class="copy-link2">
+                        <input type="text" class="copy-link-input2" value="LUEJSJUL123151" readonly>
+                        <button type="button" class="copy-link-button2">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link2").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input2");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button2");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="JS-image"><a href="https://verify.letsupgrade.in" target="_blank"><img
+                                src="JavaScript.jpg" alt="JavaScript certificate" width="400"></a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="thirdSection">
+                <div class="PY">
+                    <div class="PY-title">
+                        <h4> Python </h4>
+                    </div>
+                    <div class="PY-gray">
+                        <pre>click on image to visit data flair Website</pre>
+                    </div>
+                    <div class="PY-image"><a href="https://data-flair.training" target="_blank"><img
+                                src="Python.JPG" alt="python certificate" width="400"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="DSA">
+                    <div class="DSA-title">
+                        <h4> DSA </h4>
+                    </div>
+                    <div class="DSA-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+
+                    <div class="copy-link3">
+                        <input type="text" class="copy-link-input3" value="LUEDSAJUL123227" readonly>
+                        <button type="button" class="copy-link-button3">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link3").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input3");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button3");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="DSA-image"><a href="https://verify.letsupgrade.in" target="_blank"><img
+                                src="DSA with java.jpg" alt="DSA certificate" width="400"></a></div>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+
+            <div class="Code-Chef-title">
+                <h4> Code Chef (java) </h4>
+            </div>
+
+
+            <div class="fourthSection">
+                <div class="LJ">
+                    <div class="LJ-title">
+                        <h4> Learn Java - Pro </h4>
+                    </div>
+                    <div class="LJ-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+                    <div class="IDPASS">
+                        <pre>ID :                                Username :                                </pre>
+                    </div>
+
+                    <div class="copy-link4">
+                        <input type="text" class="copy-link-input4" value="41ef641" readonly>
+                        <button type="button" class="copy-link-button4">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link4").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input4");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button4");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="copy-link5">
+                        <input type="text" class="copy-link-input5" value="pre_b_2640" readonly>
+                        <button type="button" class="copy-link-button5">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link5").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input5");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button5");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="LJ-image"><a href="https://www.codechef.com/certificates/verify" target="_blank"><img
+                                src="Learn Java.jpg" alt="Learn java certificate" width="400"></a></div>
+                </div>
+
+                <br>
+
+                <div class="CC-DSA">
+                    <div class="DSA-title">
+                        <h4> Data Structures and Algorithms </h4>
+                    </div>
+                    <div class="DSA-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+                    <div class="DSA-IDPASS">
+                        <pre>ID :                                Username :                                </pre>
+                    </div>
+
+                    <div class="copy-link6">
+                        <input type="text" class="copy-link-input6" value="dcb3afc" readonly>
+                        <button type="button" class="copy-link-button6">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link6").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input6");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button6");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="copy-link7">
+                        <input type="text" class="copy-link-input7" value="pre_b_2640" readonly>
+                        <button type="button" class="copy-link-button7">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link7").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input7");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button7");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="DSA-image"><a href="https://www.codechef.com/certificates/verify" target="_blank"><img
+                                src="Data Structures and Algorithms.jpg"
+                                alt="Data Structures and Algorithms certificate" width="400"></a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="fifthSection">
+                <div class="JP1">
+                    <div class="JP1-title">
+                        <h4> Java for Problem solving - 1 </h4>
+                    </div>
+                    <div class="JP1-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+                    <div class="JP1-IDPASS">
+                        <pre>ID :                                Username :                                </pre>
+                    </div>
+
+                    <div class="copy-link8">
+                        <input type="text" class="copy-link-input8" value="806f5ae" readonly>
+                        <button type="button" class="copy-link-button8">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link8").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input8");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button8");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="copy-link9">
+                        <input type="text" class="copy-link-input9" value="pre_b_2640" readonly>
+                        <button type="button" class="copy-link-button9">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link9").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input9");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button9");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="JP1-image"><a href="https://www.codechef.com/certificates/verify" target="_blank"><img
+                                src="Java for problem solving - 1.jpg"
+                                alt="Java for problem solving - 1 certificate" width="400"></a></div>
+                </div>
+
+                <br>
+
+                <div class="JP2">
+                    <div class="JP2-title">
+                        <h4> Java for Problem solving - 2 </h4>
+                    </div>
+                    <div class="JP2-gray">
+                        <pre>click on image to verify the certificates</pre>
+                    </div>
+                    <div class="JP2-IDPASS">
+                        <pre>ID :                                Username :                                </pre>
+                    </div>
+
+                    <div class="copy-link10">
+                        <input type="text" class="copy-link-input10" value="cf8c065" readonly>
+                        <button type="button" class="copy-link-button10">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link10").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input10");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button10");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="copy-link11">
+                        <input type="text" class="copy-link-input11" value="pre_b_2640" readonly>
+                        <button type="button" class="copy-link-button11">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                    </div>
+                    <script>
+                        document.querySelectorAll(".copy-link11").forEach((copyLinkParent) => {
+                            const inputField = copyLinkParent.querySelector(".copy-link-input11");
+                            const copyButton = copyLinkParent.querySelector(".copy-link-button11");
+                            const text = inputField.value;
+
+                            inputField.addEventListener("focus", () => inputField.select());
+
+                            copyButton.addEventListener("click", () => {
+                                inputField.select();
+                                navigator.clipboard.writeText(text);
+
+                                inputField.value = "Copied!";
+                                setTimeout(() => (inputField.value = text), 500);
+                            });
+                        });
+                    </script>
+
+                    <div class="JP2-image"><a href="https://www.codechef.com/certificates/verify" target="_blank"><img
+                                src="Java for problem solving - 2.jpg"
+                                alt="Java for problem solving - 2 certificate" width="400"></a></div>
+                </div>
+            </div>
+
+
+        </main>
+    </main>
+
+</body>
+
+</html>
