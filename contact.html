@@ -80,6 +80,10 @@
             font-size: 1.7rem;
         }
 
+        .buttons{
+            display:flex;
+        }
+
         .leftSection .btn1 {
             padding: 12px;
             background-color: #404040;
@@ -101,7 +105,7 @@
             font-size: 17px;
             cursor: pointer;
             position: relative;
-            right: -15px;
+            right: -67px;
             top: 45px;
         }
 
@@ -116,6 +120,29 @@
             position: relative;
             top: 45px;
             right: -30px;
+        }
+
+        @media screen and (max-width: 890px) {
+          .buttons{
+            flex-direction: column-reverse;
+          }
+          .leftSection .btn2{
+            position: relative;
+            right: -100px;
+          }
+
+          .leftSection .btn3 {
+            position: relative;
+            top: 60px;
+            right: -93px;
+          }
+
+          .leftSection .btn1 {
+            position: relative;
+            top: 75px;
+            right: -52px;
+          }
+ 
         }
 
         .rightSection img {
@@ -281,9 +308,8 @@
                 <span id="element"></span>
                 <div class="buttons">
                     <a href="Digital Resume.jpg "><button class="btn1">Download Resume</button></a>
+                    <a href="https://www.linkedin.com/in/harshavardhan-kurtkoti-87541525b/" target="_blanklo"><button class="btn3">LinkedIn</button></a>
                     <a href="https://github.com/harshakurtkoti" target="_blank"><button class="btn2">Github</button></a>
-                    <a href="https://www.linkedin.com/in/harshavardhan-kurtkoti-87541525b/" target="_blanklo"><button
-                            class="btn3">LinkedIn</button></a>
                 </div>
             </div>
             <div class="rightSection">
