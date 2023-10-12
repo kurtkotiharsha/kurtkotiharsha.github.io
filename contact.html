@@ -26,7 +26,6 @@
             align-items: center;
             height: 80px;
             background-color: rgb(169, 95, 238);
-            
         }
 
         nav div {
@@ -43,6 +42,7 @@
             margin: 0 23px;
         }
 
+
         nav ul li a {
             text-decoration: none;
             color: black;
@@ -52,114 +52,6 @@
             text-decoration: none;
             color: rgb(235, 224, 248);
             font-size: 1.01rem;
-        }
-
-        main hr {
-            border: 0;
-            background: rgb(169, 95, 238);
-            height: 1px;
-            margin: 40px 53px;
-        }
-
-        .left {
-            font-size: 1.8rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: auto;
-            align-items: center;
-        }
-
-        .firstSection>div {
-            width: 40%;
-        }
-
-        .leftSection {
-            margin: 80px;
-            font-size: 1.7rem;
-        }
-
-        .buttons{
-            display:flex;
-        }
-
-        .leftSection .btn1 {
-            padding: 12px;
-            background-color: #404040;
-            color: white;
-            border: 2px solid white;
-            border-radius: 30px;
-            font-size: 17px;
-            cursor: pointer;
-            position: relative;
-            top: 45px;
-        }
-
-        .leftSection .btn2 {
-            padding: 12px;
-            background-color: #404040;
-            color: white;
-            border: 2px solid white;
-            border-radius: 30px;
-            font-size: 17px;
-            cursor: pointer;
-            position: relative;
-            right: -67px;
-            top: 45px;
-        }
-
-        .leftSection .btn3 {
-            padding: 12px;
-            background-color: #404040;
-            color: white;
-            border: 2px solid white;
-            border-radius: 30px;
-            font-size: 17px;
-            cursor: pointer;
-            position: relative;
-            top: 45px;
-            right: -30px;
-        }
-
-        @media screen and (max-width: 890px) {
-          .buttons{
-            flex-direction: column-reverse;
-          }
-          .leftSection .btn2{
-            position: relative;
-            right: -100px;
-          }
-
-          .leftSection .btn3 {
-            position: relative;
-            top: 60px;
-            right: -93px;
-          }
-
-          .leftSection .btn1 {  
-            position: relative;
-            top: 75px;
-            right: -52px;
-          }
- 
-        }
-
-        @media screen and (max-width: 800px) {
-            nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(169, 95, 238);
-            width: max-content;
-        }
-        }
-
-        .rightSection img {
-            width: 90%;
-            margin: 90px 0;
         }
 
         .purple {
@@ -189,21 +81,75 @@
             background: white;
             width: 80vw;
             height: 2px;
-            margin: 134px 0;
+            margin: 90px 0;
             display: flex;
         }
 
-        @media screen and (max-width: 1200px) {
-            .firstSection {
-                flex-direction: column-reverse;
-            }            
+
+
+        main{
+            position: relative;
+            top: 51px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        section {
+            text-align: center;
+            margin: 20px;
+        }
+
+        form {
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            max-width: 234px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        label,
+        input,
+        textarea {
+            display: block;
+            margin: 12px -10px;
+        }
+
+        .message{
+            padding-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2{
+            display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
         }
 
         .secondSection .vertical {
-            background-color: white;
-            width: 3px;
             height: 93px;
-            margin: 0 90px;
+            width: 3px;
+            background-color: white;
+            margin: 0 100px;
 
             .image-top {
                 width: 60px;
@@ -310,79 +256,47 @@
         </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">Hi, My Name is <span class="purple">Harshavardhan</span>
-                <div>and I am a Aspiring</div>
-                <div>Developer</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="Digital Resume.jpg "><button class="btn1">Download Resume</button></a>
-                    <a href="https://www.linkedin.com/in/harshavardhan-kurtkoti-87541525b/" target="_blanklo"><button class="btn3">LinkedIn</button></a>
-                    <a href="https://github.com/harshakurtkoti" target="_blank"><button class="btn2">Github</button></a>
-                </div>
-            </div>
-            <div class="rightSection">
-                <img src="developer.jpg" alt="">
-            </div>
+        <section id+"contact">
+            <hr>
+            <h2 class="contact">Contact Me</h2>
+            <form if="contact-form">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" style="" required>
+
+                <label for="email">Email :</label>
+                <input type="text" name="" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">what I have done so far</span>
-            <h1>Past Courses</h1>
+        <script src="script.js">// Add your JavaScript for form submission and validation here
 
-            <div class="box">
+            document.getElementById("contact-form").addEventListener("submit", function (e) {
+                e.preventDefault();
 
-                <div class="vertical">
-                    <img class="image-top" src="AWS.png" alt="aws logo">
-                    <div class="vertical-title">
-                        AWS Course
-                        <div class="vertical-title2">
-                            (Jan 2023-Mar 2023)
-                        </div>
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dolore in mollitia placeat,
-                        voluptas dolores magnam officiis odit hic amet magni vero impedit.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top2" src="codechef.png" alt="">
-                    <img class="image-top3" src="java.jpg" alt="">
-                    <div class="vertical2-title">
-                        Java with Codechef
-                        <div class="vertical2-title2">
-                            (Dec 2022-May 2023)
-                        </div>
-                        <div class="vertical2-desc">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dolore in mollitia placeat,
-                            voluptas dolores magnam officiis odit hic amet magni vero impedit.
-                        </div>
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top4" src="API.png" alt="">
-                    <div class="vertical3-title">
-                        API with postman
-                        <div class="vertical3-title2">
-                            (Jun 2023-jul2023)
-                        </div>
-                        <div class="vertical3-desc">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dolore in mollitia placeat,
-                            voluptas dolores magnam officiis odit hic amet magni vero impedit.
-                        </div>
-                    </div>
+            });<? php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $name = $_POST["name"];
+                $email = $_POST["email"];
+                $message = $_POST["message"];
 
-        </section>
+                // Send an email notification
+                $to = "kurtkotiharsha2@email.com";
+                $subject = "New Contact Form Submission";
+                $headers = "From: ".$email;
+                $messageBody = "Name: $name\nEmail: $email\nMessage:\n$message";
 
-    </main>
+                mail($to, $subject, $messageBody, $headers);
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Amazon Web Service', 'Application Programming Interface', 'Java', 'Data Structures and Algorithms', 'Python', 'HTML / CSS / Java Script'],
-            typeSpeed: 60,
-        });
-    </script>
-</body>
+                // Redirect to the thank you page
+                header("Location: thank-you.html");
+            }?></script>
+
+        </main>
+
+    </body>
 
 </html>
