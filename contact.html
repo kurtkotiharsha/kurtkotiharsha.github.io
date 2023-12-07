@@ -256,12 +256,12 @@
         </nav>
     </header>
     <main>
-        <section id+"contact">
+        <section id="contact">
             <hr>
             <h2 class="contact">Contact Me</h2>
-            <form if="contact-form">
+            <form id="contact-form">
                 <label for="name">Name :</label>
-                <input type="text" id="name" name="name" style="" required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email :</label>
                 <input type="text" name="" id="email" name="email" required>
@@ -273,27 +273,29 @@
             </form>
         </section>
         <script src="script.js">// Add your JavaScript for form submission and validation here
-
             document.getElementById("contact-form").addEventListener("submit", function (e) {
                 e.preventDefault();
+            });
+        </script>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $message = $_POST["message"];
 
-            });<? php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $name = $_POST["name"];
-                $email = $_POST["email"];
-                $message = $_POST["message"];
+            // Send an email notification
+            $to = "kurtkotiharsha2@email.com";
+            $subject = "New Contact Form Submission";
+            $headers = "From: " . $email;
+            $messageBody = "Name: $name\nEmail: $email\nMessage:\n$message";
 
-                // Send an email notification
-                $to = "kurtkotiharsha2@email.com";
-                $subject = "New Contact Form Submission";
-                $headers = "From: ".$email;
-                $messageBody = "Name: $name\nEmail: $email\nMessage:\n$message";
+            mail($to, $subject, $messageBody, $headers);
 
-                mail($to, $subject, $messageBody, $headers);
-
-                // Redirect to the thank you page
-                header("Location: thank-you.html");
-            }?></script>
+            // Redirect to the thank you page
+            header("Location: thank-you.html");
+            exit(); // Ensure that no other code is executed after the redirect
+        }
+        ?>
 
         </main>
 
